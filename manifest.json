@@ -1,8 +1,8 @@
 {
   "name": "WNC AI MCP",
-  "version": "1.3.7",
-  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.7/wnc-ai-mcp.zip",
-  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.7",
+  "version": "1.3.8",
+  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.8/wnc-ai-mcp.zip",
+  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.8",
   "requires": "5.8", "tested": "6.7", "requires_php": "7.4",
-  "changelog": "Fix 'connected but no tools / no OAuth rows': token storage now verifies the DB write, self-heals the token table if an in-place update left it missing, and refuses to issue a token it cannot persist. Settings/plugin load now also recreates the table whenever it is absent."
+  "changelog": "Send no-store/no-cache headers on all plugin REST responses so a page cache or CDN cannot serve stale OAuth discovery metadata to the connector (the cause of a broken 'connected but no tools' state after updating). Purge the site cache once after updating."
 }
