@@ -1,8 +1,8 @@
 {
   "name": "WNC AI MCP",
-  "version": "1.3.5",
-  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.5/wnc-ai-mcp.zip",
-  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.5",
+  "version": "1.3.6",
+  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.6/wnc-ai-mcp.zip",
+  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.6",
   "requires": "5.8", "tested": "6.7", "requires_php": "7.4",
-  "changelog": "Self-heal DB tables on update so OAuth access tokens persist (fixes connected-but-no-tools)."
+  "changelog": "OAuth sign-in discovery now works on any host: metadata and the auth challenge are served under /wp-json/ instead of the site-root /.well-known/ path, fixing 'couldn't register with the sign-in service' on sites where .well-known isn't routed to WordPress (nginx ACME, some multisite/Polylang setups)."
 }
