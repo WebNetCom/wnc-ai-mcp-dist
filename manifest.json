@@ -1,8 +1,8 @@
 {
   "name": "WNC AI MCP",
-  "version": "1.3.4",
-  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.4/wnc-ai-mcp.zip",
-  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.4",
+  "version": "1.3.5",
+  "zip": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/download/v1.3.5/wnc-ai-mcp.zip",
+  "url": "https://github.com/WebNetCom/wnc-ai-mcp-dist/releases/tag/v1.3.5",
   "requires": "5.8", "tested": "6.7", "requires_php": "7.4",
-  "changelog": "Fix OAuth login loop: authorize/consent served off-REST so the login cookie is honored without a nonce."
+  "changelog": "Self-heal DB tables on update so OAuth access tokens persist (fixes connected-but-no-tools)."
 }
